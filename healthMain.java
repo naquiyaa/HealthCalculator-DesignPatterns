@@ -24,7 +24,7 @@ class DefaultCalc implements HealthAppCalculator {
   public double calculateBMR(int age, double weight, double height, String gender) {
     String genderFormatted = gender.toLowerCase();
     System.out.println(genderFormatted);
-    if(genderFormatted.equals("female")){
+    if(genderFormatted.equals("femmale")){
       return Math.round((9.6 * weight + 1.8 * height - 4.7 * age + 655)*100)/100;
     }
     else if(genderFormatted.equals("male")){
